@@ -26,5 +26,8 @@ pico_enable_stdio_usb(BrainfuckOnPico 1)
 # Add the standard library to the build
 target_link_libraries(BrainfuckOnPico pico_stdlib)
 
+# Add any user requested libraries
+target_link_libraries(BrainfuckOnPico hardware_adc)
+
 pico_add_extra_outputs(BrainfuckOnPico)
 
